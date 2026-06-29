@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: dogear
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookverse
+    username: bookverse_user
+    password: bookverse_password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      time-to-live: 86400000 # 24 hours in milliseconds
+
+  cache:
+    type: redis
+
+# Logging configuration
+logging:
+  level:
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG
+    org.flywaydb: INFO
+
+# Application specific settings
+app:
+  jwt:
+    secret: 9a67a8693c126d40ad2f913d09a067bb2cf817340c21a37c4cf872bc9776d634db6c74768393e15093112bd78d8a1db1b402cf2e32a4e98f090906c29188a1de
+    expiration-ms: 86400000 # 24 hours
+    issuer: dogear-api

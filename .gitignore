@@ -1,0 +1,21 @@
+# Next.js / Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env*.local
+
+# Java / Spring Boot
+backend/.gradle/
+backend/build/
+backend/out/
+backend/*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.iml
