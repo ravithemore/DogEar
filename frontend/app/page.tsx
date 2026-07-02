@@ -201,7 +201,8 @@ export default function Home() {
   if (!mounted) {
     return (
       <div className="min-h-screen bg-[#FCF9F3] flex items-center justify-center">
-        <BookOpen className="h-8 w-8 text-emerald-800 animate-pulse" />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.png" alt="Dogear Logo" className="h-10 w-10 animate-pulse rounded-lg object-contain" />
       </div>
     );
   }
@@ -221,8 +222,9 @@ export default function Home() {
 
       {/* Top Navigation */}
       <header className="border-b border-stone-200/60 bg-white/80 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <BookOpen className="h-6 w-6 text-emerald-800" />
+        <Link href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.png" alt="Dogear Logo" className="h-8 w-8 rounded-lg object-contain" />
           <span className="font-serif text-2xl font-bold tracking-tight text-emerald-950">Dogear</span>
         </Link>
         <div className="flex items-center gap-4">

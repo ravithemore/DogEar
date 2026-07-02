@@ -55,8 +55,9 @@ function VerifyForm() {
   return (
     <div className="min-h-screen bg-stone-50 text-stone-900 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
-        <Link href="/" className="inline-flex items-center gap-2 mb-4">
-          <BookOpen className="h-8 w-8 text-emerald-800" />
+        <Link href="/" className="inline-flex items-center gap-2 mb-4 hover:opacity-90 transition-opacity">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.png" alt="Dogear Logo" className="h-10 w-10 rounded-lg object-contain" />
           <span className="font-serif text-3xl font-bold tracking-tight text-emerald-950">Dogear</span>
         </Link>
         <h2 className="font-serif text-3xl font-bold text-stone-900">Verify your email</h2>
