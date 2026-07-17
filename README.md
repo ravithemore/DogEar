@@ -2,7 +2,7 @@
 
 > **Discover books through people, not algorithms.**
 
-Dogear is a modern, social reading journal and community feed designed for book enthusiasts. Instead of cold, algorithmic recommendations, Dogear centers on real human reviews, takeaways, favorite quotes, and interactive reading goals.
+Dogear is a modern, social-reading journal and community feed designed for book enthusiasts. Instead of cold, algorithmic recommendations, Dogear centers on real human reviews, takeaways, favorite quotes, and interactive reading goals.
 
 ---
 
